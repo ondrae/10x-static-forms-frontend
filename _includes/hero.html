@@ -7,8 +7,30 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
     <div class="usa-hero__callout">
       <h2 class="usa-hero__heading"><span class="usa-hero__heading--alt">Hero callout:</span>Bring attention to a project priority
       </h2>
-      <p>Support the callout with some short explanatory text. You don’t need more than a couple of sentences.</p>
-      <a class="usa-button" href="javascript:void(0)">Call to action</a>
+      <h1 class="usa-hero__heading"><span class="usa-hero__heading--alt">Cheeseburgers!</span></h1>
+      <form id="burger-form" class="usa-form" action="https://10x-static-forms.app.cloud.gov/form-endpoint" method="post">
+        <fieldset class="usa-fieldset">
+          <legend class="usa-sr-only">WHat kind of burger do you want?</legend>
+          <div class="usa-radio">
+            <input class="usa-radio__input" id="impossible" type="radio" checked name="burger" value="impossible">
+            <label class="usa-radio__label" for="impossible">Impossible Burger</label>
+          </div>
+          <div class="usa-radio">
+            <input class="usa-radio__input" id="cheeseburger" type="radio" name="burger" value="cheeseburger">
+            <label class="usa-radio__label" for="cheeseburger">Cheese Burger</label>
+          </div>
+          <div class="usa-radio">
+            <input class="usa-radio__input" id="fried_chicken" type="radio" name="burger" value="fried_chicken">
+            <label class="usa-radio__label" for="fried_chicken">Fried Chicken</label>
+          </div>
+        </fieldset>
+
+        <label class="usa-label" for="_to">What is your email?</label>
+        <input class="usa-input" id="email" name="_to" type="text">
+
+        <input hidden name="_subject" value="10x static site demo - cheeseburgers">
+        <input type="submit" value="Gimmie" class="usa-button" />
+      </form>
     </div>
   </div>
 </section>
